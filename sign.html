@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>4449 Win - Sign Up</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        background: linear-gradient(90deg, #5b6cff, #6aa9ff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 360px;
+        background: #fff;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .header {
+        background: linear-gradient(90deg, #ff6b6b, #ff8c8c);
+        padding: 20px;
+        color: white;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #ff6b6b;
+    }
+
+    label {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+    }
+
+    .input-box {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        outline: none;
+    }
+
+    .input-box:focus {
+        border-color: #ff6b6b;
+    }
+
+    .phone-box {
+        display: flex;
+        gap: 8px;
+    }
+
+    .country {
+        width: 70px;
+        text-align: center;
+        background: #f2f2f2;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 12px;
+    }
+
+    .checkbox {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        margin: 10px 0 20px;
+    }
+
+    .signup-btn {
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 25px;
+        background: linear-gradient(90deg, #ff8c8c, #ffb3b3);
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .signup-btn:hover {
+        opacity: 0.9;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="header">
+        4449 Win
+    </div>
+
+    <div class="content">
+        <h3>Sign up</h3>
+
+        <label>Phone number</label>
+        <div class="phone-box">
+            <div class="country">+91</div>
+            <input type="tel" class="input-box" id="email" placeholder="Email">
+
+        </div>
+
+
+        <label>Password</label>
+        <input type="password" class="input-box" id="password" placeholder="Password">
+
+         
+         <input type="text" class="input-box" placeholder="Enter invitation code" required>
+
+
+        <div class="checkbox">
+            <input type="checkbox">
+            <span>I accept the Terms and Conditions</span>
+<div class="login-link">
+    Already have an account?
+    <a href="login.html">Login</a> <div class="login-link">
+    Already have an account?
+    <a href="login.html">Login</a>
+</div>
+
+</div>
+
+        </div>
+        <button class="signup-btn" onclick="signup()">Sign up</button>
+
+    </div>
+</div>
+<script type="module">
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBBPpHeQPokChMANXIy78BpT8DAGZQiGPw",
+  authDomain: "win-ad891.firebaseapp.com",
+  projectId: "win-ad891",
+  storageBucket: "win-ad891.firebasestorage.app",
+  messagingSenderId: "777370829193",
+  appId: "1:777370829193:web:58af7368078591e6806158",
+  measurementId: "G-CRQ64R428M"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
+</body>
+</html>
