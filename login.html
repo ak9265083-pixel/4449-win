@@ -80,7 +80,7 @@
         </div>
     </div>
 <script type="module">
-<script type="module">
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
@@ -88,7 +88,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyBBPpHeQPokChMANXIy78BpT8DAGZQiGPw",
   authDomain: "win-ad891.firebaseapp.com",
   projectId: "win-ad891",
-  storageBucket: "win-ad891.firebasestorage.app",
+  storageBucket: "win-ad891.appspot.com",
   messagingSenderId: "777370829193",
   appId: "1:777370829193:web:58af7368078591e6806158"
 };
@@ -97,18 +97,20 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 window.login = function () {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
 
-    signInWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-            alert("Login Successful ✅");
-            window.location.href = "index.html";
-        })
-        .catch((error) => {
-            alert(error.message);
-        });
+  signInWithEmailAndPassword(auth, email, password)
+    .then(() => {
+      alert("Login Successful ✅");
+      window.location.href = "index.html";
+    })
+    .catch((error) => {
+      alert(error.message);
+    });
 };
+</script>
+
 </script>
 
 
